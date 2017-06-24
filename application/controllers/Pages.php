@@ -11,7 +11,7 @@
       $this->load->view('templates/header');
       $this->load->view('templates/nav');
       $this->load->view('pages/'.$page, $data);
-      $this->load->view('templates/content_home');
+      // $this->load->view('templates/content_home');
       $this->load->view('templates/footer');
     }
   }
