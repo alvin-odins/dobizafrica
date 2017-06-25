@@ -5,4 +5,9 @@
   <div class="post-body">
     <?php echo $articles['body']; ?>
   </div>
+
+  <hr>
+  <?php echo form_open('/articles/delete/'.$articles['id']); ?>
+    <input type="submit" value="delete" class="btn btn-danger">
+
 </div>

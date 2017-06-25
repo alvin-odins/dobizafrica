@@ -30,7 +30,7 @@
         $data['title'] = 'Publish New Article';
 
         $this->form_validation->set_rules('title', 'Title', 'required');
-        $this->form_validation->set_rules('body', 'Body', 'body');
+        $this->form_validation->set_rules('body', 'Body', 'required');
 
         if ($this->form_validation->run() === FALSE) {
           $this->load->view('templates/header');
@@ -38,8 +38,8 @@
           $this->load->view('articles/create', $data);
           $this->load->view('templates/footer');
         } else {
-          $this->article_model->set_article();
-          $this->load->view('articles/success');
+          $this->article_model->create_article();
+          redirect('articles');
         }
 
     }
