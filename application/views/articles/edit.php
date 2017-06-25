@@ -25,4 +25,4 @@
     </div>
     <button type="submit" class="btn btn-success">Submit Article</button>
   </form>
-</div>
+

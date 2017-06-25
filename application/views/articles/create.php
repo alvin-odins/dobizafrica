@@ -1,5 +1,4 @@
 <div class="container">
-  <br><br><br>
   <h2><?= $title; ?></h2>
 
   <?php echo validation_errors(); ?>
@@ -28,4 +27,3 @@
     </div>
     <button type="submit" class="btn btn-success">Submit Article</button>
   </form>
-</div>
