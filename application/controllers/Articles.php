@@ -29,10 +29,19 @@
     public function create(){
         $data['title'] = 'Publish New Article';
 
-        $this->load->view('templates/header');
-        $this->load->view('templates/nav');
-        $this->load->view('articles/create', $data);
-        $this->load->view('templates/footer');
+        $this->form_validation->set_rules('title', 'Title', 'required');
+        $this->form_validation->set_rules('body', 'Body', 'body');
+
+        if ($this->form_validation->run() === FALSE) {
+          $this->load->view('templates/header');
+          $this->load->view('templates/nav');
+          $this->load->view('articles/create', $data);
+          $this->load->view('templates/footer');
+        } else {
+          $this->article_model->set_article();
+          $this->load->view('articles/success');
+        }
+
     }
   }
  ?>
