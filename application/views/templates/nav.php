@@ -45,7 +45,7 @@
                 <ul class="dropdown-menu">
                   <li><a href="<?php echo base_url(); ?>articles/create">Create Article</a></li>
                   <li><a href="<?php echo base_url(); ?>categories">Categories</a></li>
-                  <li><a href="<?php echo base_url(); ?>articles/create">Edit</a></li>
+                  <li><a href="<?php echo base_url(); ?>categories/create">Create Category</a></li>
                 </ul>
               </li>
             </ul>
