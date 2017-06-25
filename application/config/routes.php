@@ -6,6 +6,9 @@ $route['articles/update'] = 'articles/update';
 $route['articles/(:any)'] = 'articles/view/$1';
 $route['articles'] = 'articles/index';
 $route['default_controller'] = 'pages/view';
+
+$route['categories/create'] = 'categories/create';
+
 $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
