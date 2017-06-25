@@ -18,12 +18,12 @@
       }
 
       public function create_article(){
-        $slug = url_title($this->input->article('title'));
+        $slug = url_title($this->input->post('title'));
 
         $data = array(
-          'title' => $this->input->article('title'),
+          'title' => $this->input->post('title'),
           'slug' => $slug,
-          'body' => $this->input->article('body')
+          'body' => $this->input->post('body')
         );
 
         return $this->db->insert('articles', $data);
@@ -36,16 +36,16 @@
       }
 
       public function update_article(){
-        $slug = url_title($this->input->article('title'));
+        $slug = url_title($this->input->post('title'));
 
         $data = array(
-          'title' => $this->input->article('title'),
+          'title' => $this->input->post('title'),
           'slug' => $slug,
-          'body' => $this->input->article('body'),
+          'body' => $this->input->post('body'),
         );
 
-        $this->db->where('id', $this->input->article('id'));
-        return $this->db->update('artilces', $data);
+        $this->db->where('id', $this->input->post('id'));
+        return $this->db->update('articles', $data);
       }
 
     }

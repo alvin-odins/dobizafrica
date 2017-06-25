@@ -65,6 +65,7 @@
 
     public function update(){
       $this->article_model->update_article();
+      redirect('articles');
     }
 
   }
