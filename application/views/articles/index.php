@@ -7,7 +7,7 @@
     <small class="post-date">Posted on: <?php echo $article['created_at']; ?></small><br>
     <?php echo $article['body']; ?>
     <br><br>
-    <p><a class="btn btn-primary" href="<?php echo site_url('/articles/'.$article['slug']); ?>">Read More</a></p>
+    <p><a class="btn btn-primary" href="<?php echo site_url('/articles/view/'.$article['slug']); ?>">Read More</a></p>
 
   <?php endforeach; ?>
 </div>

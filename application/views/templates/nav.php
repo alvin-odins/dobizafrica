@@ -19,7 +19,7 @@
               <li class="dropdown">
   							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learn Africa Business<span class="caret"></span></a>
   							<ul class="dropdown-menu">
-  								<li><a href="<?php echo base_url(); ?>articles/index">Articles</a></li>
+  								<li><a href="<?php echo base_url(); ?>articles/index/index">Articles</a></li>
   								<li><a href="#">Business Entities</a></li>
   								<li><a href="#">Corporate Formalities</a></li>
   								<li><a href="#">African Entrepreneurs</a></li>

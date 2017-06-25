@@ -1,5 +1,4 @@
 RewriteEngine on
-RewriteBase /dobizafrica/
 
 RewriteCond $1 !^(index\.php|assets|images|js|css|uploads|favicon.png)
 RewriteCond %(REQUEST_FILENAME) !-f
