@@ -7,6 +7,7 @@ $route['articles/(:any)'] = 'articles/view/$1';
 $route['articles'] = 'articles/index';
 $route['default_controller'] = 'pages/view';
 
+$route['categories/index'] = 'categories/index';
 $route['categories/create'] = 'categories/create';
 
 $route['(:any)'] = 'pages/view/$1';
