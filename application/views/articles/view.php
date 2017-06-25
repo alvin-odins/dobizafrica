@@ -19,5 +19,23 @@
     	<?php echo form_open('/articles/delete/'.$articles['id']); ?>
     		<input type="submit" value="Delete" class="btn btn-danger">
       </form>
+  <hr>
+  <h3>Add Comment</h3>
+  <?php echo form_ope('comments/create/'.$article['id']); ?>
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Body</label>
+      <textarea name="body" class="form-control"></textarea>
+    </div>
+    <input type="hidden" name="slug" value="<?php echo $article['slug']; ?>">
+    <button type="submit" class="btn btn-defualt">Comment</button>
+  </form>
 
 
