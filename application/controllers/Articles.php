@@ -25,5 +25,14 @@
 			$this->load->view('articles/view', $data);
 			$this->load->view('templates/footer');
 		}
+
+    public function create(){
+        $data['title'] = 'Publish New Article';
+
+        $this->load->view('templates/header');
+        $this->load->view('templates/nav');
+        $this->load->view('articles/create', $data);
+        $this->load->view('templates/footer');
+    }
   }
  ?>
