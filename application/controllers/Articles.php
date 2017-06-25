@@ -54,7 +54,7 @@
             $article_image = 'noimage.jpg';
           } else {
             $data = array('upload_data' => $this->upload->data());
-            $article_image = $_FILES['articleimage']['name'];
+            $article_image = $_FILES['userfile']['name'];
           }
 
           $this->article_model->create_article($article_image);
