@@ -10,7 +10,13 @@
 				'name' => $this->input->post('name')
 			);
 
-			return $this->db->insert('articles_cat', $data);
+			return $this->db->insert('categories', $data);
+		}
+
+		public function get_categories(){
+			$this->db->order_by('name');
+			$query = $this->db->get('categories');
+			return $query->result_array();
 		}
 	}
 ?>

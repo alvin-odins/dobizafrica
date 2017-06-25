@@ -40,6 +40,14 @@
   						</li>
   <!--						<li><a href="#about">FAQ</a></li>-->
               <li><a href="<?php echo base_url(); ?>about">About us</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Articles Temp<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="<?php echo base_url(); ?>articles/create">Create Article</a></li>
+                  <li><a href="<?php echo base_url(); ?>categories">Categories</a></li>
+                  <li><a href="<?php echo base_url(); ?>articles/create">Edit</a></li>
+                </ul>
+              </li>
             </ul>
   					<ul class="nav navbar-nav navbar-right">
   						<li><a href="#about">Sign in</a></li>

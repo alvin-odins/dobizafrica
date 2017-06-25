@@ -9,7 +9,7 @@
       public function get_articles($slug = FALSE){
         if ($slug === FALSE) {
           $this->db->order_by('articles.id', 'DESC');
-          $this->db->join('articles_cat', 'articles_cat_id = articles.articles_cat_id');
+          $this->db->join('categories', 'category_id = articles.category_id');
           $query = $this->db->get('articles');
           return $query->result_array();
         }
@@ -25,7 +25,7 @@
           'title' => $this->input->post('title'),
           'slug' => $slug,
           'body' => $this->input->post('body'),
-          'articles_cat_id' => $this->input->post('articles_cat_id'),
+          'category_id' => $this->input->post('category_id'),
           'article_image' => $article_image
         );
 
@@ -45,7 +45,7 @@
           'title' => $this->input->post('title'),
           'slug' => $slug,
           'body' => $this->input->post('body'),
-          'articles_cat_id' => $this->input->post('articles_cat_id')
+          'category_id' => $this->input->post('category_id')
         );
 
         $this->db->where('id', $this->input->post('id'));
@@ -54,7 +54,7 @@
 
       public function get_categories(){
         $this->db->order_by('name');
-        $query = $this->db->get('articles_cat');
+        $query = $this->db->get('categories');
         return $query->result_array();
       }
 
