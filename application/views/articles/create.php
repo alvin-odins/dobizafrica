@@ -1,7 +1,7 @@
 <div class="container">
   <br><br><br>
   <h2><?= $title; ?></h2>
-  <form>
+  <?php echo form_open('articles/create') ?>
     <div class="form-group">
       <label>Title:</label>
       <input type="text" name="title" placeholder="Add Title">
