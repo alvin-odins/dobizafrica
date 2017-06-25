@@ -58,6 +58,16 @@
         return $query->result_array();
       }
 
+      public function get_articles_by_category($category_id){
+        // order by articles id
+        $this->db->order_by('articles.id', 'DESC');
+        // we want to join with the categories
+        $this->db->join('categories', 'categories.id = articles.category_id');
+        // we only want the article from specific category so we use get_where, where the category id is equal to the category id passed in
+        $query = $this->db->get_where('articles', array('category_id' => $category_id));
+        return $query->result_array();
+      }
+
     }
 
 

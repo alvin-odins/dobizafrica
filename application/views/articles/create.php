@@ -15,10 +15,10 @@
     </div>
     <div class="form-group">
       <label>Category</label>
-      <select class="form-control" name="articles_cat_id">
-        <?php foreach ($articles_cat as $article_cat): ?>
-          <option value="<?php echo $article_cat['id']; ?>"><?php echo $article_cat['name']; ?></option>
-        <?php endforeach; ?>
+      <select class="form-control" name="category_id">
+        <?php foreach($categories as $category): ?>
+        <option value="<?php echo $category['id']; ?>"><?php echo $category['name']; ?></option>
+<?php endforeach; ?>
       </select>
     </div>
     <div class="form-group">
