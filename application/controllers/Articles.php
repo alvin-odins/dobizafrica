@@ -29,6 +29,8 @@
     public function create(){
         $data['title'] = 'Publish New Article';
 
+        $data['articles_cat'] = $this->article_model->get_categories();
+
         $this->form_validation->set_rules('title', 'Title', 'required');
         $this->form_validation->set_rules('body', 'Body', 'required');
 
