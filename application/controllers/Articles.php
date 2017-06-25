@@ -54,6 +54,9 @@
     public function edit($slug){
       $data['articles'] = $this->article_model->get_articles($slug);
 
+      $data['articles_cat'] = $this->article_model->get_categories();
+
+
 			if(empty($data['articles'])){
 				show_404();
 			}
