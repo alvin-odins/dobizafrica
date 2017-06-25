@@ -28,5 +28,17 @@
 			}
 		}
 
+		public function articles($id){
+			$data['title'] = $this->category_model->get_category($id)->name;
+
+			$data['articles'] = $this->article_model->get_articles_by_category($id);
+
+			// we dont necessarily have to create a new view for this we can use the articles/index cos all it needs is a variable called articles and the title
+			$this->load->view('templates/header');
+			$this->load->view('templates/nav');
+			$this->load->view('articles/index', $data);
+			$this->load->view('templates/footer');
+		}
+
 	}
 ?>
