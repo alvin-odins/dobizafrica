@@ -14,6 +14,11 @@
 
 			return $this->db->insert('comments', $data);
 		}
+
+		public function get_comments($article_id){
+			$query = $this->db->get_where('comments', array('article_id' => $article_id));
+			return $query->result_array();
+		}
 	}
 
 ?>

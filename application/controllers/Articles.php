@@ -14,12 +14,15 @@
     }
 
     public function view($slug = NULL){
-			$data['articles'] = $this->article_model->get_articles($slug);
+			$data['article'] = $this->article_model->get_articles($slug);
+      // we need article id in order to grab the comments
+      $article_id = $data['article']['id'];
+      $data['comments'] = $this->comment_model->get_comments($article_id);
 
-			if(empty($data['articles'])){
+			if(empty($data['article'])){
 				show_404();
 			}
-			$data['title'] = $data['articles']['title'];
+			$data['title'] = $data['article']['title'];
 			$this->load->view('templates/header');
 			$this->load->view('templates/nav');
 			$this->load->view('articles/view', $data);
