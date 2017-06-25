@@ -43,5 +43,29 @@
         }
 
     }
+
+    public function delete($id){
+      $this->article_model->delete_article($id);
+      redirect('articles');
+    }
+
+    public function edit($slug){
+      $data['articles'] = $this->article_model->get_articles($slug);
+
+			if(empty($data['articles'])){
+				show_404();
+			}
+			$data['title'] = 'Edit Article';
+
+			$this->load->view('templates/header');
+			$this->load->view('templates/nav');
+			$this->load->view('articles/edit', $data);
+			$this->load->view('templates/footer');
+    }
+
+    public function update(){
+      $this->article_model->update_article();
+    }
+
   }
  ?>

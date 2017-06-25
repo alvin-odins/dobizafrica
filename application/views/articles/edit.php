@@ -5,14 +5,15 @@
   <?php echo validation_errors(); ?>
 
 
-  <?php echo form_open('articles/create') ?>
+  <?php echo form_open('articles/update') ?>
+    <input type="hidden" name="id" value="<?php echo $articles['id']; ?>">
     <div class="form-group">
       <label>Title:</label>
-      <input class="form-control" type="text" name="title" placeholder="Add Title">
+      <input type="text" name="title" value="<?php echo $articles['title']; ?>" placeholder="Add Title">
     </div>
     <div class="form-group">
       <label>Body:</label>
-      <textarea class="form-control" name="body"></textarea>
+      <textarea class="form-control" name="body" value="<?php echo $articles['body']; ?>"></textarea>
     </div>
     <button type="submit" class="btn btn-success">Submit Article</button>
   </form>
