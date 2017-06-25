@@ -13,5 +13,11 @@
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/includes/script.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/map.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/accordion.js"></script>
+
+    <script>
+        // Replace the <textarea id="editor1"> with a CKEditor
+        // instance, using default configuration.
+        CKEDITOR.replace( 'editor1' );
+    </script>
   </body>
 </html>

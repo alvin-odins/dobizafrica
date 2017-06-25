@@ -35,6 +35,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/cssmap-africa/cssmap-africa.css" media="screen" />
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css" type="text/css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" type="text/css">
+  <script src="http://cdn.ckeditor.com/4.7.0/standard/ckeditor.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/ckeditor.js" type="text/css"></script>
 
   <title>Dobiz - Africa</title>
