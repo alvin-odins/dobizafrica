@@ -7,7 +7,7 @@
     </footer>
     </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/jquery-3.1.1.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="https://cssmapsplugin.com/5/jquery.cssmap.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/includes/script.js"></script>

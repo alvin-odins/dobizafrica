@@ -5,7 +5,7 @@
   <?php echo validation_errors(); ?>
 
 
-  <?php echo form_open('articles/create') ?>
+  <?php echo form_open_multipart('articles/create') ?>
     <div class="form-group">
       <label>Title:</label>
       <input class="form-control" type="text" name="title" placeholder="Add Title">
@@ -21,6 +21,10 @@
           <option value="<?php echo $article_cat['id']; ?>"><?php echo $article_cat['name']; ?></option>
         <?php endforeach; ?>
       </select>
+    </div>
+    <div class="form-group">
+      <label>Upload Image</label>
+      <input type="file" name="articleimage" size="20">
     </div>
     <button type="submit" class="btn btn-success">Submit Article</button>
   </form>
