@@ -15,8 +15,9 @@
 
     public function view($slug = NULL){
 			$data['article'] = $this->article_model->get_articles($slug);
-      // we need article id in order to grab the comments
+      // we need article id in order to grab the comments, we get it from ['article'] above cos it returns single article
       $article_id = $data['article']['id'];
+      // get our comments
       $data['comments'] = $this->comment_model->get_comments($article_id);
 
 			if(empty($data['article'])){

@@ -16,6 +16,7 @@
 		}
 
 		public function get_comments($article_id){
+			// get where takes in the table and the conditions in the form of an array i.e match article_id with the $article_id passed in
 			$query = $this->db->get_where('comments', array('article_id' => $article_id));
 			return $query->result_array();
 		}

@@ -17,6 +17,17 @@
       <?php echo form_open('/articles/delete/'.$article['id']); ?>
         <button type="submit" class="btn btn-danger">Delete</button>
       </form>
+      <hr>
+      <h3>Comments</h3>
+      <?php if($comments) : ?>
+        <?php foreach($comments as $comment) : ?>
+          <div class="lead" style="margin: 20px 0;">
+            <h5><?php echo $comment['body']; ?> [by <strong><?php echo $comment['name']; ?></strong>]</h5>
+          </div>
+        <?php endforeach; ?>
+      <?php else : ?>
+          <p>No comments to display</p>
+      <?php endif; ?>
 
       <hr>
       <h3>Add Comment</h3>
