@@ -22,6 +22,9 @@
         // so no need to do password enc in model
         $this->user_model->register($enc_password);
 
+        // set message
+        $this->session->set_flashdata('user_registered', 'You are now registered and can login');
+
         redirect('articles');
       }
     }
