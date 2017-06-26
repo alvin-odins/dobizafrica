@@ -99,17 +99,13 @@
 						</div>
 						<!-- END OF THE CSSMap - Africa -->
 
-		        <div id="demo-agents" class="demo-agents-list wrapper">
+				        <div id="demo-agents" class="demo-agents-list wrapper">
 
-		        </div>
-		        <div id="demo-markers">
+				        </div>
+				        <div id="demo-markers">
 
-		        </div>
-		        <!-- END OF THE MAP -->
-
-
-
-
+				        </div>
+				        <!-- END OF THE MAP -->
 					</div>
 				</div>
 
@@ -136,7 +132,60 @@
 					<!-- </div> -->
 				</div>
 
+				
+				<div class="featurette">
+					<div class="container">
+						<h6 class="text-center">Business Focused</h6>
+						<h2 class="text-center">Home for Africa Entrepreneurs</h2>
 
+						<div class="row">
+							<div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+								<p class="lead text-center">Dobiz Africa is the platform of choice for information regarding all business rules, guidelines and tax matters on the African continent</p>
+							</div>
+						</div>
+
+						<section style="margin-top:90px;"></section>
+
+						<section class="solutions" style="margin-top:90px;">
+							<div class="row">
+
+								<div class="col-md-1 col-sm-1"></div>
+								
+								<a href="">
+									<div class="col-md-3 col-sm-3 first" style="border: 1px dotted skyblue; margin-right: 15px; padding: 20px;">
+										<p>
+											<span style="font-weight: bold; font-family: Roboto; font-size:24px; color: #000;">Hidden Economy</span>
+											<span style="font-weight: bold; font-family: Roboto; font-size: 32px; color: #000; display: block;">70%</span>
+										</p>
+										<p>What we are doing will greatly make Africas hidden economy more visible and draw the needed funds to them</p>
+									</div>
+								</a>
+
+								<a href="">
+									<div class="col-md-3 col-sm-3 second" style="border: 1px dotted skyblue; margin-right: 15px; padding: 20px;">
+										<p>
+											<span style="font-weight: bold; font-family: Roboto; font-size:24px; color: #000;">Unremmitted Taxes</span>
+											<span style="font-weight: bold; font-family: Roboto; font-size:32px; color: #000; display: block;">80% of GDP</span>
+										</p>
+										<p>One of our primary objectives is to ensure accountability from the business and from the relevant tax authorities and legal matters</p>
+									</div>
+								</a>
+								
+								<a href="">
+									<div class="col-md-3 col-sm-3 third" style="border: 1px dotted skyblue; padding: 20px;">
+										<p>
+											<span style="font-weight: bold; font-family: Roboto; font-size:24px; color: #000;">Business Failures</span>
+											<span style="font-weight: bold; font-family: Roboto; font-size:32px; color: #000; display: block;">9 of 10</span>
+										</p>
+										<p>Dobiz Africa is going to drive and sustain the reversal of this negative trend and make it 10 our of 10 will stand and grow </p>
+									</div>
+								</a>
+
+							</div>
+						</section>
+
+					</div>
+				</div>
 
 
 			</div>

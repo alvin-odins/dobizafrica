@@ -1,7 +1,9 @@
 <div class="container">
 <br><br><br>
   <div class="row">
-    <div class="col-md-8 col-sm-8 col-xs-8 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+    <div class="col-md-3 col-sm-3 col-xs-3"></div>
+
+    <div class="col-md-7 col-sm-7 col-xs-7">
       <h2><?php echo $article['title']; ?></h2>
       <small class="post-date">Posted on: <?php echo $article['created_at']; ?></small><br>
 
@@ -49,8 +51,11 @@
         <button type="submit" class="btn btn-primary">Comment</button>
       </form>
 
-      </div><br><br>
-    </div>
+    </div><br><br>
+
+    <div class="col-md-2 col-sm-2 col-xs-2"></div>
+
+  </div>
       
 
 
