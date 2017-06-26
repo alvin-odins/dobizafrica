@@ -5,15 +5,37 @@
 			<p class="text-center">powering african businesses</p>
 		</div>
 		</div> -->
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<div class="row">
 
-		<div class="jumbotron">
+					<div class="col-md-4 col-sm-4" style="color:#fff; height: 420px; background: #000; opacity: 0.6;">
+						<!-- <div class="bg" style="opacity: 0.5; color: #000;"></div> -->
+						<h2 class="display-3" style="color: #fff;">Dobiz Africa</h2>
+						<p class="lead" style="color: #fff;">Africa meets the world. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+
+					<div class="col-md-8 col-sm-8"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid sub-head">
+			<div class="row">
+				<div class="col-md-8 col-sm-8 col-md-offset-4 col-sm-offset-4">
+					<h3 style="color: #fff!important;">Lorem Ipsum</h3>
+					<p style="color: #fff!important;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="jumbotron">
 			<div class="row" style="top: 0px; visibility: visible;">
 				<div class="col-md-6 col-sm-6" style="opacity: 1; top: 138.5px; transform: translate(0px, 0px); display: block; width: 100%; float:left;">
 					<h1 style="font-family: Roboto; text-transform: ; font-size: ; line-height: 66px; font-weight: ; margin-bottom: 8px; display: block; color: #fff; z-index: 101; letter-spacing: -0.5px;">Promoting African Business</h1>
 					<span class="subheader" style="font-family:'OpenSansLight'; line-height28px;color:#fff;font-size:22px;">Transparent, Innovative, Brand-Inspired, Eco-Friendly</span>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="container">
 		  <div class="row">
@@ -30,7 +52,13 @@
 			<div class="">
 				<div class="row">
 					<div class="col-md-4 col-sm-4" style="margin-top:60px;">
-
+						<ul class="list-unstyled">
+							<li><a href="">Lorem</a></li>
+							<li><a href="">Lorem</a></li>
+							<li><a href="">Lorem</a></li>
+							<li><a href="">Lorem</a></li>
+							<li><a href="">Lorem</a></li>
+						</ul>
 					</div>
 					<div class="col-md-7 col-sm-7">
 						<div id="map-africa">
@@ -131,6 +159,18 @@
 						</div>
 					<!-- </div> -->
 				</div>
+		</div>
+		</div>
+
+		        <div class="jumbotron jumbotron-fluid divide">
+					<div class="container">
+						<div class="col-md-7 col-sm-7 col-md-offset-5 col-sm-offset-5">
+							<h2 class="display-3 text-right">Empowered for business</h2>
+						<p class="lead text-right"></p>
+						</div>
+					</div>
+				</div>
+				
 
 				
 				<div class="featurette">
@@ -146,16 +186,16 @@
 
 						<section style="margin-top:90px;"></section>
 
-						<section class="solutions" style="margin-top:90px;">
-							<div class="row">
+						<section class="solutions">
+							<div class="row" style="padding: 40px 0; margin: 40px 0;">
 
 								<div class="col-md-1 col-sm-1"></div>
 								
 								<a href="">
 									<div class="col-md-3 col-sm-3 first" style="border: 1px dotted skyblue; margin-right: 15px; padding: 20px;">
 										<p>
-											<span style="font-weight: bold; font-family: Roboto; font-size:24px; color: #000;">Hidden Economy</span>
-											<span style="font-weight: bold; font-family: Roboto; font-size: 32px; color: #000; display: block;">70%</span>
+											<span style="font-weight: bold; font-family: Roboto; font-size:22px; color: #000;">Hidden Economy</span>
+											<span style="font-weight: bold; font-family: Roboto; font-size: 24px; color: #000; display: block;">70%</span>
 										</p>
 										<p>What we are doing will greatly make Africas hidden economy more visible and draw the needed funds to them</p>
 									</div>
@@ -164,18 +204,18 @@
 								<a href="">
 									<div class="col-md-3 col-sm-3 second" style="border: 1px dotted skyblue; margin-right: 15px; padding: 20px;">
 										<p>
-											<span style="font-weight: bold; font-family: Roboto; font-size:24px; color: #000;">Unremmitted Taxes</span>
-											<span style="font-weight: bold; font-family: Roboto; font-size:32px; color: #000; display: block;">80% of GDP</span>
+											<span style="font-weight: bold; font-family: Roboto; font-size:22px; color: #000;">Unremmitted Taxes</span>
+											<span style="font-weight: bold; font-family: Roboto; font-size:24px; color: #000; display: block;">80%</span>
 										</p>
 										<p>One of our primary objectives is to ensure accountability from the business and from the relevant tax authorities and legal matters</p>
 									</div>
 								</a>
 								
 								<a href="">
-									<div class="col-md-3 col-sm-3 third" style="border: 1px dotted skyblue; padding: 20px;">
+									<div class="col-md-3 col-sm-3 third" style="border: 1px dotted skyblue; margin-right: 15px; padding: 20px;">
 										<p>
-											<span style="font-weight: bold; font-family: Roboto; font-size:24px; color: #000;">Business Failures</span>
-											<span style="font-weight: bold; font-family: Roboto; font-size:32px; color: #000; display: block;">9 of 10</span>
+											<span style="font-weight: bold; font-family: Roboto; font-size:22px; color: #000;">Business Failures</span>
+											<span style="font-weight: bold; font-family: Roboto; font-size:24px; color: #000; display: block;">1%</span>
 										</p>
 										<p>Dobiz Africa is going to drive and sustain the reversal of this negative trend and make it 10 our of 10 will stand and grow </p>
 									</div>
@@ -186,7 +226,3 @@
 
 					</div>
 				</div>
-
-
-			</div>
-</div>
