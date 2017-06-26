@@ -16,7 +16,7 @@
 			);
 
 			// insert to database
-			return $this->db->insert('users', $data);
+			return $this->db->insert('user', $data);
 		}
 	}
 ?>
