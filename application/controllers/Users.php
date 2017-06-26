@@ -30,6 +30,27 @@
       }
     }
 
+    public function login(){
+      $data['title'] = 'Login';
+
+      $this->form_validation->set_rules('username', 'Username', 'required');
+      $this->form_validation->set_rules('password', 'Password', 'required');
+
+      if ($this->form_validation->run() === FALSE) {
+        $this->load->view('templates/header');
+        $this->load->view('templates/nav');
+        $this->load->view('users/login', $data);
+        $this->load->view('templates/footer');
+      } else {
+        
+        $this->session->set_flashdata('user_loggedin', 'You are now logged in');
+
+        redirect('articles');
+      }
+      
+      
+    }
+
     // check if username exist
     function check_username_exists($username){
       $this->form_validation->set_message('check_username_exists', 'username already exist. Please choose a different one');

@@ -48,8 +48,8 @@
           $config['upload_path'] = './assets/img/articles';
           $config['allowed_types'] = '.gif|jpg|png';
           $config['max_size'] = '2048';
-          $config['max_width'] = '500';
-          $config['max_height'] = '500';
+          $config['max_width'] = '1800';
+          $config['max_height'] = '798';
 
           $this->load->library('upload', $config);
 
@@ -76,7 +76,7 @@
       $this->article_model->delete_article($id);
 
       $this->session->set_flashdata('article_deleted', 'Article has been removed');
-      
+
       redirect('articles');
     }
 
