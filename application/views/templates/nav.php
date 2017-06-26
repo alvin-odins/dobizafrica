@@ -56,3 +56,26 @@
           </div><!--/.nav-collapse -->
         </div>
       </nav>
+
+<div class="container">
+  <!-- Flash Message -->
+  <?php if($this->session->flashdata('user_registered')): ?>
+    <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_registered').'</p>'; ?>
+  <?php endif; ?>
+
+  <?php if($this->session->flashdata('article_created')): ?>
+    <?php echo '<p class="alert alert-success">'.$this->session->flashdata('article_created').'</p>'; ?>
+  <?php endif; ?>
+
+  <?php if($this->session->flashdata('article_updated')): ?>
+    <?php echo '<p class="alert alert-success">'.$this->session->flashdata('article_updated').'</p>'; ?>
+  <?php endif; ?>
+
+  <?php if($this->session->flashdata('category_created')): ?>
+    <?php echo '<p class="alert alert-success">'.$this->session->flashdata('category_created').'</p>'; ?>
+  <?php endif; ?>
+
+  <?php if($this->session->flashdata('article_deleted')): ?>
+    <?php echo '<p class="alert alert-success">'.$this->session->flashdata('article_deleted').'</p>'; ?>
+  <?php endif; ?>
+</div>

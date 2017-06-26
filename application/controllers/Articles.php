@@ -63,6 +63,10 @@
           }
 
           $this->article_model->create_article($article_image);
+
+          // set message
+          $this->session->set_flashdata('article_created', 'New Article Added');
+
           redirect('articles');
         }
 
@@ -70,6 +74,9 @@
 
     public function delete($id){
       $this->article_model->delete_article($id);
+
+      $this->session->set_flashdata('article_deleted', 'Article has been removed');
+      
       redirect('articles');
     }
 
@@ -92,6 +99,9 @@
 
     public function update(){
       $this->article_model->update_article();
+      
+      $this->session->set_flashdata('article_updated', 'Article updated successfully');
+
       redirect('articles');
     }
 

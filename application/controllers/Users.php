@@ -12,6 +12,7 @@
 
       if ($this->form_validation->run() === FALSE) {
         $this->load->view('templates/header');
+        $this->load->view('templates/nav');
         $this->load->view('users/register', $data);
         $this->load->view('templates/footer');
       } else {
