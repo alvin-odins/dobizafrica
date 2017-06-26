@@ -15,7 +15,14 @@
         $this->load->view('users/register', $data);
         $this->load->view('templates/footer');
       } else {
-        die('continue');
+        // Encrypt password
+        $enc_password = md5($this->input->post('password'));
+
+        // mvc is for us to do anything without db in controller
+        // so no need to do password enc in model
+        $this->user_model->register($enc_password);
+
+        redirect('articles');
       }
     }
   }
