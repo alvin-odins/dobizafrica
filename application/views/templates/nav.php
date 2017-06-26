@@ -51,7 +51,7 @@
             </ul>
   					<ul class="nav navbar-nav navbar-right">
   						<li><a href="#about">Sign in</a></li>
-              <li><a href="#contact">Register</a></li>
+              <li><a href="<?php echo base_url(); ?>users/register">Register</a></li>
   					</ul>
           </div><!--/.nav-collapse -->
         </div>
