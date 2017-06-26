@@ -18,5 +18,16 @@
 			// insert to database
 			return $this->db->insert('user', $data);
 		}
+
+		public function check_username_exists($username){
+			$query = $this->db->get_where('user', array('username' => $username));
+			if (empty($query->row_array())) {
+				return true;
+			} else {
+				return false;
+			}
+			
+		}
+
 	}
 ?>

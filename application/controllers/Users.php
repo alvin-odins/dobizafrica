@@ -5,7 +5,7 @@
       $data['title'] = 'Register';
 
       $this->form_validation->set_rules('name', 'Name', 'trim|required|alpha|min_length[4]|max_length[30]');
-      $this->form_validation->set_rules('username', 'Username', 'trim|required|alpha|min_length[4]|max_length[12]');
+      $this->form_validation->set_rules('username', 'Username', 'trim|required|callback_check_username_exists|alpha|min_length[4]|max_length[12]');
       $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[user.email]');
       $this->form_validation->set_rules('password', 'Password', 'trim|required');
       $this->form_validation->set_rules('password2', 'Confirm Password', 'trim|matches[password]');
@@ -29,5 +29,17 @@
         redirect('articles');
       }
     }
+
+    // check if username exist
+    function check_username_exists($username){
+      $this->form_validation->set_message('check_username_exists', 'username already exist. Please choose a different one');
+      if ($this->user_model->check_username_exists($username)) {
+        return true;
+      } else {
+        return false;
+      }
+      
+    }
+    
   }
  ?>
