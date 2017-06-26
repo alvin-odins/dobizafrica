@@ -58,6 +58,7 @@
             $article_image = 'noimage.jpg';
           } else {
             $data = array('upload_data' => $this->upload->data());
+            // have to use 'userfile' else the image wont upload
             $article_image = $_FILES['userfile']['name'];
           }
 
